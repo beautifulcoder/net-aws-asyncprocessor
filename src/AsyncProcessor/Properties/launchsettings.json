@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "AsyncProcessor": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "AWS_PROFILE": "default",
+        "QUEUE_NAME": "my-test-queue"
+      }
+    }
+  }
+}

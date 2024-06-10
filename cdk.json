@@ -1,5 +1,5 @@
 {
-  "app": "dotnet run --project src/NetAwsAsyncprocessor/NetAwsAsyncprocessor.csproj",
+  "app": "dotnet run --project src/AsyncProcessor.Cdk/AsyncProcessor.Cdk.csproj",
   "watch": {
     "include": [
       "**"
