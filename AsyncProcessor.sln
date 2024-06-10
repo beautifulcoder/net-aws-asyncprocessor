@@ -1,9 +1,9 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetAwsAsyncprocessor", "NetAwsAsyncprocessor\NetAwsAsyncprocessor.csproj", "{209751BF-EEF7-4136-A9A2-9B83949A33AE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asyncprocessor", "src\Asyncprocessor.Cdk\Asyncprocessor.Cdk.csproj", "{209751BF-EEF7-4136-A9A2-9B83949A33AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
