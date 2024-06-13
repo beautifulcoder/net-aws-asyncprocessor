@@ -19,14 +19,25 @@ public class WorkerHandler(
 
   public async Task ProcessMessage(Message message, CancellationToken cancellationToken)
   {
-    _logger.LogInformation("Processing message {MessageId}", message.MessageId);
+    try
+    {
+      _logger.LogInformation("Processing message {MessageId}", message.MessageId);
 
-    // Simulate processing time
-    await Task.Delay(2000, cancellationToken);
+      // Simulate processing time
+      await Task.Delay(2000, cancellationToken);
 
-    _logger.LogInformation("Body: {Body}", message.Body);
-    _logger.LogInformation("Message {MessageId} processed", message.MessageId);
+      _logger.LogInformation("Body: {Body}", message.Body);
+      _logger.LogInformation("Message {MessageId} processed", message.MessageId);
 
-    await _sqsClient.DeleteMessageAsync(_sqsUrl, message.ReceiptHandle, cancellationToken);
+      await _sqsClient.DeleteMessageAsync(_sqsUrl, message.ReceiptHandle, cancellationToken);
+    }
+    catch (TaskCanceledException)
+    {
+      throw;
+    }
+    catch (Exception ex)
+    {
+      _logger.LogError(ex, ex.Message);
+    }
   }
 }
