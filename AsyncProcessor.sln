@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncProcessor", "src\Async
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncProcessor.Cdk", "src\AsyncProcessor.Cdk\AsyncProcessor.Cdk.csproj", "{0B333321-A7A3-4B89-9E82-983C9BFEE583}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncProcessor.Tests", "src\AsyncProcessor.Tests\AsyncProcessor.Tests.csproj", "{0542A32B-B62D-48C7-8CB9-1F24D3CE7135}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,9 +28,14 @@ Global
 		{0B333321-A7A3-4B89-9E82-983C9BFEE583}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B333321-A7A3-4B89-9E82-983C9BFEE583}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B333321-A7A3-4B89-9E82-983C9BFEE583}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0542A32B-B62D-48C7-8CB9-1F24D3CE7135}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0542A32B-B62D-48C7-8CB9-1F24D3CE7135}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0542A32B-B62D-48C7-8CB9-1F24D3CE7135}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0542A32B-B62D-48C7-8CB9-1F24D3CE7135}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{976C6EB9-B1A2-42EF-864D-871438CC287E} = {DEB246A7-9357-4214-9400-2CE59BFF365B}
 		{0B333321-A7A3-4B89-9E82-983C9BFEE583} = {DEB246A7-9357-4214-9400-2CE59BFF365B}
+		{0542A32B-B62D-48C7-8CB9-1F24D3CE7135} = {DEB246A7-9357-4214-9400-2CE59BFF365B}
 	EndGlobalSection
 EndGlobal

@@ -24,7 +24,7 @@ public class WorkerHandler(
       _logger.LogInformation("Processing message {MessageId}", message.MessageId);
 
       // Simulate processing time
-      await Task.Delay(2000, cancellationToken);
+      await Task.Delay(200, cancellationToken);
 
       _logger.LogInformation("Body: {Body}", message.Body);
       _logger.LogInformation("Message {MessageId} processed", message.MessageId);
